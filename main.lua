@@ -6,7 +6,7 @@ exports.description = "Convenient utils for reading files, via lightweight strea
 exports.tags = {"luvit", "fs", "read" }
 exports.dependencies = { 
   "luvit/luvit@2", 
-  "virgo-agent-toolkit/luvit-line-emitter",
+  "virgo-agent-toolkit/line-emitter",
   "luvit/tap"
 }
 exports.author = { name = 'Kaustav Haldar'}

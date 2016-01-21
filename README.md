@@ -21,9 +21,11 @@ One can extend readStream and create their own cleaner e.g. to exclude comments 
 This library relies on virgo-agent-toolkit/line-emitter which only parses lines that end in a newline (\n) character therefore the last line in files with no newline at the end will be left unparsed. 
 The best way to circumvent this limitation is to use `fs.createReadStream` and write your own line-emitter implementation or other chunking mechanism.
 
+Please see tests.lua for examples
+
 ## Testing
 ```
-lit install luvit-tap
+lit install luvit/tap
 luvit test.lua
 ```
 
