@@ -18,8 +18,6 @@ Returns the file contents in a table in the callback.
 Similiar to readStreamClean but returns file contents in a callback instead of as a stream
 
 One can extend readStream and create their own cleaner e.g. to exclude comments starting with a character that isnt # or using any lua regex.
-This library relies on virgo-agent-toolkit/line-emitter which only parses lines that end in a newline (\n) character therefore the last line in files with no newline at the end will be left unparsed. 
-The best way to circumvent this limitation is to use `fs.createReadStream` and write your own line-emitter implementation or other chunking mechanism.
 
 Please see tests.lua for examples
 
